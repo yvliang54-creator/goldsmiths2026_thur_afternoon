@@ -28,17 +28,31 @@
         x=x+10;
         console.log(x);
 
+        var listOfImages= ['https://tse4.mm.bing.net/th/id/OIP.dRvtKU83rzVF0EWiMrE66gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3'];
+        var listOfFruit= ['orange','apple','tomato']; // a list /array
+
+        listOfFruit[3]='pear'
+
+        console.log(listOfFruit[3]);
+
+        document.getElementById("liang").innerText="Paul";
+
+        function init() {
+            document.getElementById("liang").innerText="Paul";
+            document.getElementById("swapimage").src = listOfImages[0];
+            document.getElementById("swapimage").style.opacity = 1;
+        }
 
     </script>
 
 </head>
-<body>
-    <center><p class="thursday" id="liang"> hello </p></center>
+<body onload="init()">
+    <p class="thursday" id="liang"> hello </p>
     Nothing...
     <p class="thursday"> Goodbye ... </p>
     <p > bye ... </p>
     <p > bye ... </p>
-<p><img width="100%" src="images/image.jpg" alt="image"></p>
+<p><img id="swapimage" width="100%" src="images/image.jpg" alt="image"></p>
     <p><video width="100%" controls>
     <source src="videos/YuLiang_week03_MinorProject_v001.mp4" type="video/mp4">
 </video></p>
